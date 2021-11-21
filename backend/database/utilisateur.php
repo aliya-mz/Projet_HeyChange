@@ -65,7 +65,7 @@ function CreateUser($username, $nom, $prenom, $myPassword, $description, $descSc
   //initaliser le prepare statement
   static $ps = null;
   //requête
-  $sql = "INSERT INTO `user` (`username`, `nom`, `prenom`, `password`, `description`, `descScolaire`, `email`, `instagram`, `idEtablissement`) VALUES ( :login, :firstName, :lastName, :eMail, :myPassword, 1)";
+  $sql = "INSERT INTO `utilisateur` (`username`, `nom`, `prenom`, `password`, `description`, `descScolaire`, `email`, `instagram`, `idEtablissement`) VALUES (:username, :nom, :prenom, :myPassword, :description, :descScolaire, :email, :instagram, :idEtablissement)";
 
   //si le prepare statement n'a encore jamais été fait
   if($ps == null){
@@ -78,7 +78,7 @@ function CreateUser($username, $nom, $prenom, $myPassword, $description, $descSc
     $ps->bindParam(':username', $username, PDO::PARAM_STR);
     $ps->bindParam(':nom', $nom, PDO::PARAM_STR);
     $ps->bindParam(':prenom', $prenom, PDO::PARAM_STR);
-    $ps->bindParam(':password', $password, PDO::PARAM_STR);
+    $ps->bindParam(':myPassword', $myPassword, PDO::PARAM_STR);
     $ps->bindParam(':description', $description, PDO::PARAM_STR);
     $ps->bindParam(':descScolaire', $descScolaire, PDO::PARAM_STR);
     $ps->bindParam(':email', $email, PDO::PARAM_STR);

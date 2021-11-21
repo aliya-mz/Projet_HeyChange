@@ -10,11 +10,13 @@ include("backend/autoload.php");
 
 session_start();
 
+userInfos = GetUser()
+
 //Vérifier qu'un utilisateur ou un administrateur est connecté
-VerifyAccessibility([1,2]);
+VerifyAccessibility([1]);
 
 //Récupérer l'utilisateur à modifier si c'est l'administrateur qui est connecté
-$idUser = FILTER_INPUT(INPUT_GET, "idUser", FILTER_VALIDATE_INT);
+//$idUser = FILTER_INPUT(INPUT_GET, "idUser", FILTER_VALIDATE_INT);
 
 //Récupérer les champs du formulaire
 $login = FILTER_INPUT(INPUT_POST, "login", FILTER_SANITIZE_STRING);
