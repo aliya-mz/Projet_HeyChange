@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58.834" height="53.73" viewBox="0 0 58.834 53.73">
+  <defs>
+    <filter id="Icon_awesome-heart" x="0" y="0" width="58.834" height="53.73" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Icon_awesome-heart)">
+    <path id="Icon_awesome-heart-2" data-name="Icon awesome-heart" d="M36.87,4.691A10.906,10.906,0,0,0,21.988,5.775L20.417,7.394,18.846,5.775A10.907,10.907,0,0,0,3.964,4.691a11.455,11.455,0,0,0-.789,16.58L18.607,37.206a2.5,2.5,0,0,0,3.613,0L37.651,21.271a11.444,11.444,0,0,0-.782-16.58Z" transform="translate(9 3.75)" fill="#fbff9f"/>
+  </g>
+</svg>

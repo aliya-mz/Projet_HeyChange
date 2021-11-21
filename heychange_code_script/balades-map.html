@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
+    <!-- Open Map Box -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    
+    <!-- La locale CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>La Locale: Cartes des Balades</title>
+  </head>
+  <body class="fontaines-map">
+  
+  <header>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid justify-content-between">
+                <a class="navbar-brand" href="#">
+                  <img src="images/logo_blanc.svg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                 
+                </div>
+              </div>
+            </nav> 
+            
+     <nav class="navbar navbar-expand navbar-light bg-light fixed-bottom">
+              <div class="container-fluid justify-content-between">
+                
+                <div class="collapse navbar-collapse " id="navbarNav2" >
+                  <ul class="navbar-nav justify-content-around">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="accueil.html">Accueil</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>     
+  </header>
+  
+  <main>
+  
+   <div class="container">
+       <div class="row">
+             <div class="page-header">
+                  <h1>Balades</h1>
+              </div>
+       </div><!-- .row -->
+       
+                    <div id='map' style='width: 100%; height: 550px;'></div>
+                    <script>
+                    mapboxgl.accessToken = 'pk.eyJ1IjoiZWR1LXphdWdndiIsImEiOiJja21hbHU1emUwbTB1Mm9xbHcyMGFla3o5In0.itE-9X2FmhC8AgKHaIoQVw';
+                    var map = new mapboxgl.Map({
+                    container: 'map', // container ID
+                    style: 'mapbox://styles/edu-zauggv/ckmalybzy586m18rwpn2p0g8z', // style URL
+                    center: [6.14087, 46.20618], // starting position [lng, lat]
+                    zoom: 14 // starting zoom
+                    });
+                        
+                            // Add zoom and rotation controls to the map.
+                                        map.addControl(new mapboxgl.NavigationControl(),'bottom-right');
+
+                                var geojson = {
+                                  type: 'FontainesCollection',
+                                  features: [
+                                      {
+                                    type: 'Fontaine',
+                                    geometry: {
+                                      type: 'Point',
+                                      coordinates: [6.14091, 46.20634]
+                                    },
+                                    properties: {
+                                      title: 'Fontaine de Saint-Gervais',
+                                      description: 'Saint-Gervais',
+                                      customLink: 'fontaine-saintgervais.html'
+                                    }
+                                  },{
+                                    type: 'Fontaine',
+                                    geometry: {
+                                      type: 'Point',
+                                      coordinates: [6.1430824, 46.2036956]
+                                    },
+                                    properties: {
+                                      title: 'Fontaine de l\'Esacalde',
+                                      description: 'Belair',
+                                    customLink: 'fontaine-saintgervais.html'
+                                    }
+                                  },{
+                                    type: 'Fontaine',
+                                    geometry: {
+                                      type: 'Point',
+                                      coordinates: [6.15377999731288, 46.20582162272181]
+                                    },
+                                    properties: {
+                                      title: 'Fontaine du Jardin Anglais',
+                                      description: 'Jardin Anglais',
+                                      customLink: 'fontaine-saintgervais.html'
+                                    }
+                                  }
+                                ]
+                                };
+
+
+                                // add markers to map
+                                geojson.features.forEach(function(marker) {
+
+                                  // create a HTML element for each feature
+                                  var el = document.createElement('div');
+                                  el.className = 'marker' + ' ' + marker.properties.category;
+
+                                  // make a marker for each feature and add to the map
+                                  new mapboxgl.Marker(el)
+                                    .setLngLat(marker.geometry.coordinates)
+                                    .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+                                    .setHTML('<a href="'+ marker.properties.customLink +'"><h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p></a>'))
+                                    .addTo(map);
+                                });
+                        
+                        
+                    </script>
+   </div><!-- .container -->
+    
+</main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>
