@@ -61,7 +61,7 @@ function ReadAnnoncesByServiceType($service){
 }
 
 //Recherche des annonces par type (proposition ou demande) et type de service (service ou bien)
-function ReadAnnoncesByServiceType($type, $service){
+function ReadAnnoncesBy($type, $service){
   //initaliser le prepare statement
   static $ps = null;
   //requête

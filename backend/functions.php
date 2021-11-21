@@ -56,13 +56,13 @@ function GetUserToUpdate($idUser){
   return readUserById(GetIdUserToUpdate($idUser));
 }
 
-//Retourner l'identifiant du rôle de l'utilisateur
+//Retourner le rôle de l'utilisateur
 function GetUserRole(){
-  //Si l'utilisateur est définti dans la session
+  //Si l'utilisateur est défini dans la session
   if(isset($_SESSION["idUser"])){
-    //Récupérer l'utilisateur pour récupérer son rôle
-    return ReadUserById($_SESSION["idUser"])["idRole"];
+    return 1;
   }
+  //Sinon, l'utilisateur est déconnecté
   else{
     return 0;
   }
@@ -119,14 +119,14 @@ function ConnectUser($login, $password){
 //Inscrire l'utilisateur, en l'ajoutant dans la BD avec son mot de passe hashé
 function SignUserIn($username, $nom, $prenom, $myPassword, $description, $descScolaire, $email, $instagram, $idEtablissement){
   //hasher le mot de passe
-  $password = password_hash($password, PASSWORD_DEFAULT);
+  $myPassword = password_hash($myPassword, PASSWORD_DEFAULT);
 
   //ajouter l'utilisateur dans la BD
-  CreateUser($username, $nom, $prenom, $myPassword, $description, $descScolaire, $email, $instagram, $idEtablissement);
+  CreateUser($username, $nom, $prenom, $myPassword, $description, $descScolaire, $email, $instagram, 0);
 
   //rediriger vers la page d'accueil
-  header('Location: index.php');
-  exit;
+  //header('Location: index.php');
+  //exit;
 }
 
 //Afficher une barre de navigation pour la page principale, contenant les liens adaptés au rôle de l'utilisateur
@@ -165,8 +165,8 @@ function UpdateUser($login, $firstName, $lastName, $eMail, $password, $idUserToU
 
 //Gestion des annonces - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-function createAnnonce($login, $firstName, $lastName, $eMail, $password, $idUserToUpdate){
-  
+function newAnnonce($login, $firstName, $lastName, $eMail, $password, $idUserToUpdate){
+  createAnnonce();
 }
 
 function deleteAnnonce($idAnnonce){
