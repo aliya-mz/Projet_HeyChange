@@ -7,6 +7,6 @@
  */
 
 define("HOST", "127.0.0.1");
-define("DBNAME", "services_etudiants_bd");
-define("DBUSER", "root");
-define("DBPWD", "");
+define("DBNAME", "133od_heychange01");
+define("DBUSER", "133od_hlepek");
+define("DBPWD", "9JrM0_fhyZ7");
