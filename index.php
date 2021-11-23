@@ -8,13 +8,11 @@ session_start();
 
 include("backend/autoload.php");
 
-//Afficher des annonces aléatoires
-if(GetUserRole()==0){
-	
-}
+//Vérifier que l'utilisateur est déconnecté ou que c'est un administrateur
+VerifyAccessibility([0]);
 
-$informations = getUser();
-echo "<div>". $informations["nom"]. " " . "</div>";
+//Afficher des annonces aléatoire
+$annoncesRandom = getRandomAnnonces();
 ?>
 <!doctype html>
 <html lang="fr">
