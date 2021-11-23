@@ -83,8 +83,14 @@ function VerifyAccessibility($acceptedRoles){
     }
   } 
   if(!$accepted){
-    header('Location: index.php');
-    exit;
+    if(GetUserRole()==0){
+      header('Location: login.php');
+      exit;
+    }
+    else{
+      header('Location: home.php');
+      exit;
+    }    
   }
 }
 
@@ -102,7 +108,7 @@ function ConnectUser($login, $password){
       SetIdUser($user["idUser"]);
 
       //rediriger vers la page d'accueil
-      header('Location: index.php');
+      header('Location: home.php');
       exit;
     }
     else{
@@ -118,6 +124,7 @@ function ConnectUser($login, $password){
 
 //Inscrire l'utilisateur, en l'ajoutant dans la BD avec son mot de passe hashé
 function SignUserIn($username, $nom, $prenom, $myPassword, $description, $descScolaire, $email, $instagram, $idEtablissement){
+  echo $myPassword;
   //hasher le mot de passe
   $myPassword = password_hash($myPassword, PASSWORD_DEFAULT);
 
@@ -182,4 +189,43 @@ function getAnnonceByFliter($recherche, $service, $motCle){
 
 function getAnnoncesByUser($idUser, $recherche){
   
+}
+
+function getRandomAnnonces(){
+  //Récupérer 8 identifiants d'annonces
+
+  //retourner les identifiants
+
+  return [];
+}
+
+function showAnnonces($idAnnonces){
+  foreach ($idAnnonces as $idAnnonce) {
+    //Récupérer les informations de chaque annonce et les afficher
+    $annonce = ReadAnnonceById($idAnnonce);
+    showAnnonce($annonce);
+  }
+}
+
+
+ //Afficher une annonce
+function showAnnonce($annonce){
+  echo "<button name=\"annonce\" value=\"".$annonce["idAnnonce"]."\" class=\"card-item";
+
+  //Définir la classe en fonction du type de l'annonce
+  if($annonce["type"]=0){
+    echo "proposition\">";
+  }
+  else{
+    echo "demande\">";
+  }
+
+  //Afficher les informations de l'annonces
+  echo      "<div class=\"photo-hue-rotate\">
+              <a class=\"bichrome\" href=\"heychange_code_script/images/photo.jpg\"><img src=\"heychange_code_script/images/photo.jpg\"></a>
+            </div>
+            <h2>".$annonce["titre"]."</h2>
+            <p>".$annonce["description"]."</p>";
+
+  echo "</button>";
 }

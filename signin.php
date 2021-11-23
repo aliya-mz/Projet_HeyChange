@@ -116,11 +116,6 @@ if($creer){
       }
   }
 
-
-
-
-
-
           </script>
         
            <button type="submit" id="creer" name="creer" value="creer" size="10"><span>Continuer</span></button>

@@ -10,17 +10,15 @@ session_start();
 
 include("backend/autoload.php");
 
-//Afficher des annonces aléatoires
-/*if(GetUserRole()==0){
-	
-}*/
-/*
-$informations = getUser();
-echo "<div>". $informations["nom"]. " " . "</div>";*/
+//Vérifier que l'utilisateur est déconnecté ou que c'est un administrateur
+VerifyAccessibility([0]);
+
+//Afficher des annonces aléatoire
+//$annoncesRandom = getRandomAnnonces();
 ?>
 
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
   <meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,7 +53,7 @@ echo "<div>". $informations["nom"]. " " . "</div>";*/
               consetetur sadipscing elitr, sed
               diam nonumy eirmod tempor</p>
           </a>
-        </div>
+</div>
         <div class="card-item demande">
           <div class=“photo-hue-rotate”>
             <a class="bichrome" href="heychange_code_script/images/photo.jpg"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
@@ -132,8 +130,11 @@ echo "<div>". $informations["nom"]. " " . "</div>";*/
       </Form>
     </div>
     <!-------------/RECHERCHE------------------------->
-    <form action="get">
-    <select id="school" name="school" class="lieuannonce filtre col-5">
+    <table>
+    <tr>
+      <td>
+    <form action="get" class="lieuannonce filtre">
+    <select id="school" name="school" >
       <option value="tout" >Établissement</option>
       <optgroup label="Collège">
       <option value="collegeAndreChavanne">Collège André Chavanne</option>
@@ -213,7 +214,8 @@ echo "<div>". $informations["nom"]. " " . "</div>";*/
       </optgroup>
       </select>
     </form>
-
+</td>
+<td>
     <form action="" class="typeannonce filtre col-5">
       <select name="typeannonce" id="typeannonce" value="Type d'annonce">
         <option value="tout" >Type d'annonce</option>
@@ -229,6 +231,9 @@ echo "<div>". $informations["nom"]. " " . "</div>";*/
         </optgroup>
       </select>
     </form>
+    </td>
+</tr>
+</table>
     <!-------------MAP------------------------->
     <div id='map' style='width: 100%; height: 200px;'></div>
     <script>
@@ -286,7 +291,7 @@ echo "<div>". $informations["nom"]. " " . "</div>";*/
     <!-------------LISTE------------------------->
     <div class="liste-annonce">
 
-      <div href="annonce.php" class="card-item proposition liste-item-card">
+      <button href="annonce.php" class="card-item proposition liste-item-card">
         <div class=“photo-hue-rotate”>
           <a class="bichrome" href="heychange_code_script/images/photo.jpg"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
         </div>
@@ -295,7 +300,7 @@ echo "<div>". $informations["nom"]. " " . "</div>";*/
           consetetur sadipscing elitr, sed
           diam nonumy eirmod tempor</p>
           
-      </div>
+</button>
 
       <div class="card-item demande liste-item-card">
         <div class=“photo-hue-rotate”>
@@ -366,7 +371,7 @@ echo "<div>". $informations["nom"]. " " . "</div>";*/
           <div class="row">
             <div class="col"><a href="home.php"><img src="heychange_code_script/images/home_active.svg" alt=""></a></div>
             <div class="col"><a href="chat.php"><img src="heychange_code_script/images/chat.svg" alt=""></a></div>
-            <div class="col"><a href="#"><img src="heychange_code_script/images/Icon awesome-plus.svg" alt=""></a></div>
+            <div class="col"><a href="createAnnonce.php"><img src="heychange_code_script/images/Icon awesome-plus.svg" alt=""></a></div>
 
             <div class="col"><a href="favorite.php"><img src="heychange_code_script/images/favoris.svg" alt=""></a></div>
 

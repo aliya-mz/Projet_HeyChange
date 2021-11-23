@@ -6,6 +6,7 @@
   Description : Gestion de la table "annnonce"
 */
 
+
 //Recherche des annonces par type (demande ou proposition)
 function ReadAnnoncesByType($type){
   //initaliser le prepare statement
