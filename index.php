@@ -3,6 +3,18 @@
 * HeyChange
 * Page de chargement
 */
+
+session_start();
+
+include("backend/autoload.php");
+
+//Afficher des annonces aléatoires
+if(GetUserRole()==0){
+	
+}
+
+$informations = getUser();
+echo "<div>". $informations["nom"]. " " . "</div>";
 ?>
 <!doctype html>
 <html lang="fr">
