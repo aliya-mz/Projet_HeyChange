@@ -3,7 +3,7 @@
   Projet     : Hey Change
   Date       : 2021
   Auteur     : Hanaé Lepek 
-  Sujet      : Constantes de connexion à la base de données services_etudiants_bd
+  Sujet      : Constantes de connexion à la base de données 133od_heychange01
  */
 
 define("HOST", "127.0.0.1");

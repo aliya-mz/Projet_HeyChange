@@ -23,7 +23,7 @@
 
 <h1>Crée ton profil</h1> 
     
-<form action="suitecreation.html" method="get" class="form-floating form-creer">
+<form action="suitecreation.php" method="get" class="form-floating form-creer">
   
     <input type="text" id="IdUtilisateur" name="IdUtilisateur" required
        minlength="4" maxlength="10" size="20" placeholder="Écris ton pseudo:*">
@@ -82,7 +82,7 @@
 
 
        <h2>Tu as déjà un compte?</h2>
-        <a href="seconnecter.html">Connecte-toi</a>
+        <a href="seconnecter.php">Connecte-toi</a>
 
 
 

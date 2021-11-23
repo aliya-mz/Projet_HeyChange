@@ -23,7 +23,7 @@
 
 <h1>Identifie-toi</h1> 
     
-<form action="accueil.html" method="get" class="form-connection">
+<form action="home.php" method="get" class="form-connection">
     
     <input type="text" id="IdUtilisateur" name="IdUtilisateur" required
        minlength="4" maxlength="10" size="30" placeholder="Entre ton pseudo:">
@@ -64,7 +64,7 @@
 
 
        <h2>Pas de compte?</h2> <br>
-        <a href="creeruncompte.html">Crée ton compte</a>
+        <a href="creeruncompte.php">Crée ton compte</a>
 
 
 

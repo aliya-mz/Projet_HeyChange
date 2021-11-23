@@ -46,15 +46,16 @@ if($terminer){
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <a href="creeruncompte.html">retour</a>
+  <a href="signin.php">retour</a>
 <h1>Crée ton profil</h1> 
+<h5>Crée ton profil</h5> 
 
-<h3>* impose une réponse</h3>
+
     
-<form action="" method="post" class="form-autre"
+<form action="home.php" method="post" class="form-autre"
 style="width:200px;">
     
-    	<select id="school" name="school" required >
+    	<select id="school" name="school" required>
 		<option value="false" disabled selected>Selectionne ton école:*</option>
 		<optgroup label="Collège">
 		<option value="collegeAndreChavanne">Collège André Chavanne</option>
@@ -137,7 +138,7 @@ style="width:200px;">
 
 	<h2 class="ajouterphoto"> Ajoute une photo de profil</h2>	
 	<label for="addpicture">
-		<img class="ajouterimage" src="images/ajouterimage.png" alt="dd" srcset="">
+		<img class="ajouterimage" src="/heychange_code_script/images/ajouterimage.png" alt="dd" srcset="">
 	</label>	
 	<input class="cacher" type="file" id="addpicture" name="addpicture">
 
@@ -157,12 +158,12 @@ style="width:200px;">
 	
 
      <br>
-    <input class="big" type="text" id="scolarite" name="scolarite" 
-       minlength="0" maxlength="300" size="35" height="10" placeholder="Ici, Tu peux décrire ta scolarité:">
+    <textarea class="big" type="text" id="scolarite" name="scolarite" 
+       minlength="0" maxlength="300"  rows="5" cols="33" placeholder="Ici, Tu peux décrire ta scolarité:"></textarea>
 
     <br>
-    <input class="big" type="text" id="toi" name="toi" 
-       minlength="0" maxlength="300" size="35" placeholder="Ici, Tu peux écrire à propos de toi:">
+    <textarea class="big" type="text" id="toi" name="toi" 
+       minlength="0" maxlength="300"  rows="5" cols="33" placeholder="Ici, Tu peux écrire à propos de toi:"></textarea>
 
         <br>
 

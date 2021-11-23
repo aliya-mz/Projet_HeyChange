@@ -53,22 +53,24 @@ if($creer){
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="titre">
   <h1>Crée ton profil</h1> 
-    
-    <form action="" method="post" class="form-floating form-creer">
+  <h5 class="double_cree_titre" >Crée ton profil</h5> 
+  </div>
+    <form action="signinSuite.php" method="post" class="form-creer">
       
         <input type="text" id="username" name="username" required
-           minlength="4" maxlength="10" size="20" placeholder="Écris ton pseudo:*"> <br>
+           minlength="4" maxlength="10" size="40" placeholder="Écris ton pseudo:*"> <br>
         
-        <input type="email" id="email" name="email" required  minlength="10" maxlength="30" size="30"  placeholder="Entre ton adresse e-mail edu:*"><br>
+        <input type="email" id="email" name="email" required  minlength="10" maxlength="60" size="40"  placeholder="Entre ton adresse e-mail edu:*" pattern="[a-z0-9._%+-]+@eduge\.ch$"><br>
 
-       <input type="text" id="instagram" name="instagram" size="30"  placeholder="Écris ton instagram:"><br>        
+       <input type="text" id="instagram" name="instagram" size="40"  placeholder="Écris ton instagram:"><br>        
     
-        <input type="text" id="prenom" name="prenom" required maxlength="30" size="30"  placeholder="Écris ton prénom:*"><br>
+        <input type="text" id="prenom" name="prenom" required maxlength="30" size="40"  placeholder="Écris ton prénom:*"><br>
 
-        <input type="text" id="nom" name="nom" required  maxlength="30" size="30"  placeholder="Écris ton nom"><br>
+        <input type="text" id="nom" name="nom"   maxlength="30" size="40"  placeholder="Écris ton nom"><br>
 
-        <input type="password" name="password" autocomplete="current-password" size="30" required minlength="8" id="id_password" placeholder="Choisis ton mot-de-passe:*">
+        <input type="password" onkeyup='check();' name="password" autocomplete="current-password" size="40" required minlength="8" id="id_password" placeholder="Choisis ton mot-de-passe:*">
         <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
      
          <script> 
@@ -87,21 +89,38 @@ if($creer){
     
          <br>   
            
-           <input type="password" name="password2" autocomplete="current-password" size="30" required="password"  minlength="8" id="id_password2" placeholder="Confirme ton mot-de-passe:*">
-           <i class="far fa-eye" id="togglePassword2" style="margin-left: -30px; cursor: pointer;"></i>
-    
+           <input type="password" onkeyup='check();' name="passwordConfirm" autocomplete="current-password" size="40" required="password"  minlength="8" id="id_passwordConfirm" placeholder="Confirme ton mot-de-passe:*">
+           <i class="far fa-eye" id="togglepasswordConfirm" style="margin-left: -30px; cursor: pointer;"></i> <br>
+           <span id='messageErreur'></span>
           <script> 
-            const togglePassword2 = document.querySelector('#togglePassword2');
-            const password2 = document.querySelector('#id_password2');
+            const togglepasswordConfirm = document.querySelector('#togglepasswordConfirm');
+            const passwordConfirm = document.querySelector('#id_passwordConfirm');
      
-            togglePassword2.addEventListener('click', function (e) {
+            togglepasswordConfirm.addEventListener('click', function (e) {
              // toggle the type attribute
-             const type = password2.getAttribute('type') === 'password' ? 'text' : 'password';
-             password2.setAttribute('type', type);
+             const type = passwordConfirm.getAttribute('type') === 'password' ? 'text' : 'password';
+             passwordConfirm.setAttribute('type', type);
              // toggle the eye slash icon
              this.classList.toggle('fa-eye-slash');
             });
             
+
+            var check = function() {
+      if (document.getElementById('id_password').value ==
+          document.getElementById('id_passwordConfirm').value) {
+          document.getElementById('messageErreur').style.color = 'green';
+          document.getElementById('messageErreur').innerHTML = '';
+      } else {
+      		document.getElementById('messageErreur').style.color = 'red';
+          document.getElementById('messageErreur').innerHTML = 'Ce n\'est pas le même mot de passe';
+      }
+  }
+
+
+
+
+
+
           </script>
         
            <button type="submit" id="creer" name="creer" value="creer" size="10"><span>Continuer</span></button>
@@ -110,11 +129,12 @@ if($creer){
     
     
            <h2>Tu as déjà un compte?</h2>
-            <a href="seconnecter.html">Connecte-toi</a>
+            <a href="login.php">Connecte-toi</a>
     
     
     
         </form>
+        
         <footer>
             <div class="navbar"></div>
         </footer>
