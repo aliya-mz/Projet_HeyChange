@@ -34,11 +34,11 @@ function ReadUserByUsername($login){
 }
 
 //Retourner les informations de l'utilisateur correspondant à l'identifiant envoyé
-function ReadUserById($idUser){
+function ReadUserById($idUtilisateur){
   //initaliser le prepare statement
   static $ps = null;
   //requête
-  $sql = "SELECT * FROM utilisateur WHERE idUtilisateur LIKE :idUser";
+  $sql = "SELECT * FROM utilisateur WHERE idUtilisateur LIKE :idUtilisateur";
 
   //si le prepare statement n'a encore jamais été fait
   if($ps == null){
