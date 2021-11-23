@@ -22,7 +22,7 @@
         </div>
        
 </header>
-<a class="modifier" href="modifierprofil.html">Modifier</a>
+<a class="modifier" href="modifieruser.php">Modifier</a>
 
 
 
@@ -33,11 +33,11 @@
     <div class="navbar">
      <div class="container"> 
          <div class="row"> 
-            <div class="col"><a href="accueil.html"><img src="images/home.svg" alt=""></a></div>
-            <div class="col"><a href="chat.html"><img src="images/chat.svg" alt=""></a></div>
-            <div class="col"><a href="#"><img src="images/Icon awesome-plus.svg" alt=""></a></div>
-            <div class="col"><a href="favoris.html"><img src="images/favoris.svg" alt=""></a></div>
-            <div class="col"><a href="profil.html"><img src="images/profil_active.svg" alt=""></a></div>
+            <div class="col"><a href="home.php"><img src="heychange_code_script/heychange_code_script/images/home.svg" alt=""></a></div>
+            <div class="col"><a href="chat.php"><img src="heychange_code_script/heychange_code_script/images/chat.svg" alt=""></a></div>
+            <div class="col"><a href="#"><img src="heychange_code_script/heychange_code_script/images/Icon awesome-plus.svg" alt=""></a></div>
+            <div class="col"><a href="favorite.php"><img src="heychange_code_script/heychange_code_script/images/favoris.svg" alt=""></a></div>
+            <div class="col"><a href="user.php"><img src="heychange_code_script/heychange_code_script/images/profil_active.svg" alt=""></a></div>
         </div> 
      </div>
     </div> 

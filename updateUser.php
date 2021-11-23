@@ -10,7 +10,7 @@ include("backend/autoload.php");
 
 session_start();
 
-userInfos = GetUser()
+/*userInfos = GetUser();*/
 
 //Vérifier qu'un utilisateur ou un administrateur est connecté
 VerifyAccessibility([1]);

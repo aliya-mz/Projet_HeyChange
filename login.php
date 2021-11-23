@@ -26,15 +26,15 @@ $connexion = FILTER_INPUT(INPUT_POST, "connexion", FILTER_SANITIZE_STRING);
     <meta name="author" content="Myaz Aliya">
     <title>Connexion</title>
     <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://use.typekit.net/bve5vcq.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <!-- CSS propre au projet-->
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <!--Navigation principale-->
-    <nav class="navbar navbar-light sticky-top bg-light flex-md-nowrap p-0 navCalendar">
-      <a class="brandName" href="#"><img src="img/logo.png" alt="" class="logo">WearTher</a>
-    </nav>
+    <h1>Identifie-toi</h1> 
+    <h4>Identifie-toi</h4>
 
     <main class="ordinaryForm">
         <!--Navigation secondaire-->
@@ -54,16 +54,16 @@ $connexion = FILTER_INPUT(INPUT_POST, "connexion", FILTER_SANITIZE_STRING);
         </div>
 
       <!--Formulaire de connexion-->
-      <form class="formAdd" action="" method="POST" class="listClothes">
+      <form class="formAdd" action="home.php" method="POST" class="listClothes">
       <table>
         <tr>
-          <td colspan="2"><input type="text" name="login" value="" placeholder="Pseudo"></td>
+          <td colspan="6"><input type="text" name="login" value="" placeholder="Entre ton pseudo" size="40"></td>
         </tr>
         <tr>
-          <td colspan="2"><input type="password" name="password" value="" placeholder="Mot de passe"></td>
+          <td colspan="6"><input type="password" name="password" value="" placeholder="Entre ton mot de passe" size="40"></td>
         </tr>
         <tr>
-          <td colspan="2"><button class="btnCreateIdea" type="submit" name="connexion" value="connexion">Connexion</button></td>
+          <td colspan="6"><button class="btnCreateIdea" type="submit" name="connexion" value="connexion"><span>Connexion</span> </button></td>
         </tr>
         <tr>
           <td colspan="2" class="error">
@@ -79,7 +79,9 @@ $connexion = FILTER_INPUT(INPUT_POST, "connexion", FILTER_SANITIZE_STRING);
           </td>
         </tr>
         <tr>
-          <td colspan="2"><a href="signin.php">Je n'ai pas encore de compte</a></td>
+        <td colspan="4"><h2>Pas de compte?</h2>  <br>
+
+          <a href="signin.php">Crée ton compte</a></td>
         </tr>
       </table>
       </form>

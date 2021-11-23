@@ -24,7 +24,7 @@
 <body>
 
 	<header>
-		<a href="accueil.html">
+		<a href="home.php">
 			<div class="logo_heychange"></div>
 		</a>
 	</header>
@@ -33,9 +33,9 @@
 	<div id="stacked-cards-block" class="stackedcards stackedcards--animatable init">
 		<div class="stackedcards-container">
 			<div class="card-item proposition">
-				<a href="annonce.html">
+				<a href="annonce.php">
 					<div class=“photo-hue-rotate”>
-						<a class="bichrome" href="images/photo.jpg"><img src="images/photo.jpg" alt=""></a>
+						<a class="bichrome" href="heychange_code_script/heychange_code_script/images/photo.jpg"><img src="heychange_code_script/heychange_code_script/images/photo.jpg" alt=""></a>
 					</div>
 					<h2>COURS DE PHOTO</h2>
 					<p>Lorem ipsum dolor sit amet,
@@ -45,7 +45,7 @@
 			</div>
 			<div class="card-item demande">
 				<div class=“photo-hue-rotate”>
-					<a class="bichrome" href="images/photo.jpg"><img src="images/photo.jpg" alt=""></a>
+					<a class="bichrome" href="heychange_code_script/heychange_code_script/images/photo.jpg"><img src="heychange_code_script/heychange_code_script/images/photo.jpg" alt=""></a>
 				</div>
 				<h2>COURS DE PHOTO</h2>
 				<p>Lorem ipsum dolor sit amet,
@@ -54,7 +54,7 @@
 			</div>
 			<div class="card-item proposition">
 				<div class=“photo-hue-rotate”>
-					<a class="bichrome" href="images/photo.jpg"><img src="images/photo.jpg" alt=""></a>
+					<a class="bichrome" href="heychange_code_script/heychange_code_script/images/photo.jpg"><img src="heychange_code_script/heychange_code_script/images/photo.jpg" alt=""></a>
 				</div>
 				<h2>COURS DE PHOTO</h2>
 				<p>Lorem ipsum dolor sit amet,
@@ -63,7 +63,7 @@
 			</div>
 			<div class="card-item proposition">
 				<div class=“photo-hue-rotate”>
-					<a class="bichrome" href="images/photo.jpg"><img src="images/photo.jpg" alt=""></a>
+					<a class="bichrome" href="heychange_code_script/heychange_code_script/images/photo.jpg"><img src="heychange_code_script/heychange_code_script/images/photo.jpg" alt=""></a>
 				</div>
 				<h2>COURS DE PHOTO</h2>
 				<p>Lorem ipsum dolor sit amet,
@@ -72,7 +72,7 @@
 			</div>
 			<div class="card-item proposition">
 				<div class=“photo-hue-rotate”>
-					<a class="bichrome" href="images/photo.jpg"><img src="images/photo.jpg" alt=""></a>
+					<a class="bichrome" href="heychange_code_script/heychange_code_script/images/photo.jpg"><img src="heychange_code_script/heychange_code_script/images/photo.jpg" alt=""></a>
 				</div>
 				<h2>COURS DE PHOTO</h2>
 				<p>Lorem ipsum dolor sit amet,
@@ -81,7 +81,7 @@
 			</div>
 			<div class="card-item demande">
 				<div class=“photo-hue-rotate”>
-					<a class="bichrome" href="images/photo.jpg"><img src="images/photo.jpg" alt=""></a>
+					<a class="bichrome" href="heychange_code_script/heychange_code_script/images/photo.jpg"><img src="heychange_code_script/heychange_code_script/images/photo.jpg" alt=""></a>
 				</div>
 				<h2>COURS DE PHOTO</h2>
 				<p>Lorem ipsum dolor sit amet,
@@ -90,7 +90,7 @@
 			</div>
 			<div class="card-item demande">
 				<div class=“photo-hue-rotate”>
-					<a class="bichrome" href="images/photo.jpg"><img src="images/photo.jpg" alt=""></a>
+					<a class="bichrome" href="heychange_code_script/heychange_code_script/images/photo.jpg"><img src="heychange_code_script/heychange_code_script/images/photo.jpg" alt=""></a>
 				</div>
 				<h2>COURS DE PHOTO</h2>
 				<p>Lorem ipsum dolor sit amet,
@@ -273,9 +273,9 @@ geojson.features.forEach(function(marker) {
 	<!-------------LISTE------------------------->
 	<div class="liste-annonce">
 
-		<div href="annonce.html" class="card-item proposition liste-item-card">
+		<div href="annonce.php" class="card-item proposition liste-item-card">
 			<div class=“photo-hue-rotate”>
-				<a class="bichrome" href="images/photo.jpg"><img src="images/photo.jpg" alt=""></a>
+				<a class="bichrome" href="heychange_code_script/heychange_code_script/images/photo.jpg"><img src="heychange_code_script/heychange_code_script/images/photo.jpg" alt=""></a>
 			</div>
 			<h2>COURS DE PHOTO</h2>
 			<p>Lorem ipsum dolor sit amet,
@@ -286,7 +286,7 @@ geojson.features.forEach(function(marker) {
 
 		<div class="card-item demande liste-item-card">
 			<div class=“photo-hue-rotate”>
-				<a class="bichrome" href="images/photo.jpg"><img src="images/photo.jpg" alt=""></a>
+				<a class="bichrome" href="heychange_code_script/heychange_code_script/images/photo.jpg"><img src="heychange_code_script/heychange_code_script/images/photo.jpg" alt=""></a>
 			</div>
 			<h2>COURS DE PHOTO</h2>
 			<p>Lorem ipsum dolor sit amet,
@@ -295,7 +295,7 @@ geojson.features.forEach(function(marker) {
 		</div>
 		<div class="card-item proposition liste-item-card">
 			<div class=“photo-hue-rotate”>
-				<a class="bichrome" href="images/photo.jpg"><img src="images/photo.jpg" alt=""></a>
+				<a class="bichrome" href="heychange_code_script/heychange_code_script/images/photo.jpg"><img src="heychange_code_script/heychange_code_script/images/photo.jpg" alt=""></a>
 			</div>
 			<h2>COURS DE PHOTO</h2>
 			<p>Lorem ipsum dolor sit amet,
@@ -304,7 +304,7 @@ geojson.features.forEach(function(marker) {
 		</div>
 		<div class="card-item proposition liste-item-card">
 			<div class=“photo-hue-rotate”>
-				<a class="bichrome" href="images/photo.jpg"><img src="images/photo.jpg" alt=""></a>
+				<a class="bichrome" href="heychange_code_script/heychange_code_script/images/photo.jpg"><img src="heychange_code_script/heychange_code_script/images/photo.jpg" alt=""></a>
 			</div>
 			<h2>COURS DE PHOTO</h2>
 			<p>Lorem ipsum dolor sit amet,
@@ -313,7 +313,7 @@ geojson.features.forEach(function(marker) {
 		</div>
 		<div class="card-item proposition liste-item-card">
 			<div class=“photo-hue-rotate”>
-				<a class="bichrome" href="images/photo.jpg"><img src="images/photo.jpg" alt=""></a>
+				<a class="bichrome" href="heychange_code_script/heychange_code_script/images/photo.jpg"><img src="heychange_code_script/heychange_code_script/images/photo.jpg" alt=""></a>
 			</div>
 			<h2>COURS DE PHOTO</h2>
 			<p>Lorem ipsum dolor sit amet,
@@ -322,7 +322,7 @@ geojson.features.forEach(function(marker) {
 		</div>
 		<div class="card-item demande liste-item-card">
 			<div class=“photo-hue-rotate”>
-				<a class="bichrome" href="images/photo.jpg"><img src="images/photo.jpg" alt=""></a>
+				<a class="bichrome" href="heychange_code_script/heychange_code_script/images/photo.jpg"><img src="heychange_code_script/heychange_code_script/images/photo.jpg" alt=""></a>
 			</div>
 			<h2>COURS DE PHOTO</h2>
 			<p>Lorem ipsum dolor sit amet,
@@ -331,7 +331,7 @@ geojson.features.forEach(function(marker) {
 		</div>
 		<div class="card-item demande liste-item-card">
 			<div class=“photo-hue-rotate”>
-				<a class="bichrome" href="images/photo.jpg"><img src="images/photo.jpg" alt=""></a>
+				<a class="bichrome" href="heychange_code_script/heychange_code_script/images/photo.jpg"><img src="heychange_code_script/heychange_code_script/images/photo.jpg" alt=""></a>
 			</div>
 			<h2>COURS DE PHOTO</h2>
 			<p>Lorem ipsum dolor sit amet,
@@ -351,14 +351,14 @@ geojson.features.forEach(function(marker) {
 		<div class="navbar">
 			<div class="container">
 				<div class="row">
-					<div class="col"><a href="accueil.html"><img src="images/home_active.svg" alt=""></a></div>
-					<div class="col"><a href="chat.html"><img src="images/chat.svg" alt=""></a></div>
-					<div class="col"><a href="#"><img src="images/Icon awesome-plus.svg" alt=""></a></div>
+					<div class="col"><a href="home.php"><img src="heychange_code_script/heychange_code_script/images/home_active.svg" alt=""></a></div>
+					<div class="col"><a href="chat.php"><img src="heychange_code_script/heychange_code_script/images/chat.svg" alt=""></a></div>
+					<div class="col"><a href="#"><img src="heychange_code_script/heychange_code_script/images/Icon awesome-plus.svg" alt=""></a></div>
 
-					<div class="col"><a href="favoris.html"><img src="images/favoris.svg" alt=""></a></div>
+					<div class="col"><a href="favorite.php"><img src="heychange_code_script/heychange_code_script/images/favoris.svg" alt=""></a></div>
 
 
-					<div class="col"><a href="profil.html"><img src="images/profil.svg" alt=""></a></div>
+					<div class="col"><a href="user.php"><img src="heychange_code_script/heychange_code_script/images/profil.svg" alt=""></a></div>
 				</div>
 			</div>
 		</div>

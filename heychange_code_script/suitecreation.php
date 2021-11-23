@@ -22,18 +22,16 @@
 </head>
 <body>
 
-	<a href="creeruncompte.html">retour</a>
-<h1>Crée ton compte</h1> 
+	<a href="creeruncompte.php">retour</a>
+<h1>Crée ton profil</h1> 
 
 <h3>* impose une réponse</h3>
     
-<form action="accueil.html" method="get" class="form-autre"
+<form action="home.php" method="get" class="form-autre"
 style="width:200px;">
     
-
-		<label for="school">Selectionne ton école:*</label>
-    	<select id="school" name="school" required>
-		<option value="false" disabled selected>--</option>
+    	<select id="school" name="school" required >
+		<option value="false" disabled selected>Selectionne ton école:*</option>
 		<optgroup label="Collège">
 		<option value="collegeAndreChavanne">Collège André Chavanne</option>
 		<option value="collegeCalvin">Collège Calvin</option>
@@ -112,30 +110,48 @@ style="width:200px;">
 		</optgroup>
     </select>
 		<br>
-		<img src="images/heart.svg" alt="">
 
+	<h2 class="ajouterphoto"> Ajoute une photo de profil</h2>	
+	<label for="addpicture">
+		<img class="ajouterimage" src="heychange_code_script/heychange_code_script/images/ajouterimage.png" alt="dd" srcset="">
+	</label>	
+	<input class="cacher" type="file" id="addpicture" name="addpicture">
 
-        <br>
-		<label for="scolarite"> Ici, Tu peux décrire ta scolarité:</label> <br>
-    <input type="text" id="scolarite" name="scolarite" 
-       minlength="0" maxlength="300" size="30" height="10">
+	<script>
+		document.querySelector("#addpicture").addEventListener("change", function (input) {
+			console.log(input)
+			if (input.target.files && input.target.files[0]) {
+				
+				var reader = new FileReader();
+				reader.onload = function (e) {
+					input.target.parentElement.querySelector("label img").src = e.target.result
+				}
+				reader.readAsDataURL(input.target.files[0]);
+			}
+		})
+	</script>
+	
 
-        <br>
-		<label for="toi">Ici, Tu peux écrire à propos de toi:</label> <br>
-    <input type="text" id="toi" name="toi" 
-       minlength="0" maxlength="300" size="30">
+     <br>
+    <input class="big" type="text" id="scolarite" name="scolarite" 
+       minlength="0" maxlength="300" size="35" height="10" placeholder="Ici, Tu peux décrire ta scolarité:">
+
+    <br>
+    <input class="big" type="text" id="toi" name="toi" 
+       minlength="0" maxlength="300" size="35" placeholder="Ici, Tu peux écrire à propos de toi:">
 
         <br>
 
     
-       <input type="submit" id="creer" name="creer" value="Terminer" 
-	    size="10" value="Terminer">
+       <button type="submit" id="creer" name="creer" value="Terminer" 
+	    size="10"><span>Terminer</span></button>
 
 
 
 
 
-        </form>
+ </form>
+ 
     <footer>
         <div class="navbar"></div>
     </footer>

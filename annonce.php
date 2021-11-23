@@ -23,7 +23,7 @@
 
 
     <div class=“photo-hue-rotate”>
-        <a class="bichrome" href="images/photo.jpg"><img src="images/photo.jpg" alt=""></a>
+        <a class="bichrome" href="heychange_code_script/heychange_code_script/images/photo.jpg"><img src="heychange_code_script/heychange_code_script/images/photo.jpg" alt=""></a>
      </div>
 
 
