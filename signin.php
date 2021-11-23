@@ -10,7 +10,7 @@ include("backend/autoload.php");
 
 session_start();
 
-//Vérifier que l'utilisateur est déconnecté ou que c'est un administrateur
+//Vérifier que l'utilisateur est déconnecté
 VerifyAccessibility([0]);
 
 //récupérer les données du formulaire

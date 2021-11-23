@@ -3,6 +3,16 @@
 * HeyChange
 * Page de chargement
 */
+
+session_start();
+
+include("backend/autoload.php");
+
+//Vérifier que l'utilisateur est déconnecté ou que c'est un administrateur
+VerifyAccessibility([0]);
+
+//Afficher des annonces aléatoire
+$annoncesRandom = getRandomAnnonces();
 ?>
 <!doctype html>
 <html lang="fr">
