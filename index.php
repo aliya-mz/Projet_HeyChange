@@ -12,7 +12,7 @@ include("backend/autoload.php");
 VerifyAccessibility([0]);
 
 //Afficher des annonces aléatoire
-$annoncesRandom = getRandomAnnonces();
+//$annoncesRandom = getRandomAnnonces();
 ?>
 <!doctype html>
 <html lang="fr">
