@@ -15,10 +15,39 @@
     <header>
       
         <div class="row align-items-center ">
-           <h1>Mes favoris</h1>
+           <h1 class="page">Mes favoris</h1>
         </div>
         
 </header>
+
+<ul class="tabs">
+    <li class="jaune"><a href="#tab1">PROFILS</a></li>
+    <li class="gris"><a href="#tab2">ANNONCES</a></li>
+</ul>
+<div class="pane">
+    <div id="tab1">
+        <h2>@12345678</h2>
+        
+    </div>
+    <div id="tab2" style="display:none;">
+        <h2>COURS DE PHOTO</h2>
+        
+    </div>
+</div>
+
+
+<script>
+$(document).ready(function() {
+    $("ul.tabs a").click(function() {
+        $(".pane div").hide();
+        $($(this).attr("href")).show();
+    });
+})
+</script>
+
+
+
+
 <footer> 
     <div class="navbar">
      <div class="container"> 

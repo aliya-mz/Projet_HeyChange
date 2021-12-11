@@ -66,7 +66,7 @@ function CreateUser($username, $nom, $prenom, $myPassword, $description, $descSc
   static $ps = null;
   //requête
   $sql = "INSERT INTO `utilisateur` (`username`, `nom`, `prenom`, `password`, `description`, `descScolaire`, `email`, `instagram`, `idEtablissement`) VALUES (:username, :nom, :prenom, :myPassword, :description, :descScolaire, :email, :instagram, :idEtablissement)";
-
+  session_start();
   //si le prepare statement n'a encore jamais été fait
   if($ps == null){
     //préparer la requête
@@ -89,13 +89,11 @@ function CreateUser($username, $nom, $prenom, $myPassword, $description, $descSc
     if($answer){
     }
 
-    echo $answer;
-  $_SESSION['error2'] = $answer; 
+
   }
   catch(PDOException $e){
-
-  session_start();
-  $_SESSION['error'] = $e->getMessage();  
+    
+  
   echo $e->getMessage();
 
   }

@@ -1,8 +1,8 @@
 <?php
 /*
-  Projet      : Suggestion de tenues en fonction de la météo
-  Date        : Mai 2021
-  Auteur      : Aliya Myaz
+  Projet      : Heychange
+  Date        : 2021
+  Auteur      : Hanaé Lepek
   Description : Page de déconnexion
 */
 
@@ -17,3 +17,4 @@ $_SESSION = array();
 //Rediriger vers la page d'accueil
 header('Location: index.php');
 exit;
+

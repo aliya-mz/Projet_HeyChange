@@ -20,14 +20,21 @@ $idEtablissement = FILTER_INPUT(INPUT_POST, "lastName", FILTER_SANITIZE_STRING);
 $terminer = FILTER_INPUT(INPUT_POST, "Terminer", FILTER_SANITIZE_STRING);
 
 if($terminer){
+
+	
   //On vérifie que les premières informations de l'utilisateur ont été enregistrées
   if(isset($_SESSION["EnCreation"])){
     echo isset($_SESSION["EnCreation"]);
+	array_push($_SESSION["EnCreation"], $toi, $scolarite);
     //Enregistrer l'utilisateur dans la base de données
     SignUserIn($_SESSION["EnCreation"][0], $_SESSION["EnCreation"][1], $_SESSION["EnCreation"][2], 
     $_SESSION["EnCreation"][5], $toi, $scolarite, $_SESSION["EnCreation"][3], $_SESSION["EnCreation"][4], $idEtablissement);
-  }
+	header('Location: home.php');  
 }
+
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -46,16 +53,15 @@ if($terminer){
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <a href="signin.php">retour</a>
+  <a href="signin.php">RETOUR</a>
 <h1>Crée ton profil</h1> 
-<h5>Crée ton profil</h5> 
+
 
 
     
-<form action="home.php" method="post" class="form-autre"
-style="width:200px;">
+<form action="signinSuite.php" method="post" class="form-autre">
     
-    	<select id="school" name="school" required>
+    	<select  id="school" name="school" required>
 		<option value="false" disabled selected>Selectionne ton école:*</option>
 		<optgroup label="Collège">
 		<option value="collegeAndreChavanne">Collège André Chavanne</option>
@@ -167,14 +173,14 @@ style="width:200px;">
 
         <br>
 
-    
-       <button type="submit" id="creer" name="Terminer" value="Terminer" 
+	<div class="navbar fixed-navbar">
+       <button type="submit" id="creer" class="btnCreateIdea" name="Terminer" value="Terminer" 
 	    size="10"><span>Terminer</span></button>
+	</div>
 
  </form>
  
-    <footer>
-        <div class="navbar"></div>
-    </footer>
+        
+   
   </body>
 </html>

@@ -1,8 +1,8 @@
 <?php
 /*
-  Projet      : Suggestion de tenues en fonction de la météo
-  Date        : Mai 2021
-  Auteur      : Aliya Myaz
+  Projet      : HeyChange
+  Date        : 2021
+  Auteur      : Hanaé Lepek
   Description : Page de gestion du compte
 */
 
