@@ -36,80 +36,88 @@ VerifyAccessibility([0]);
   <body>
     <header>
       <a href="home.php">
-        <div class="logo_heychange"></div>
+        <div class="logo_heychange"><img src="/heychange_code_script/image/logo_heychange.svg" alt=""></div>
       </a>
+
     </header>
 
     <!-------------Match------------------------>
     <div id="stacked-cards-block" class="stackedcards stackedcards--animatable init">
       <div class="stackedcards-container">
         <div class="card-item proposition">
-          <a href="annonce.php">
             <div class=“photo-hue-rotate”>
-              <a class="bichrome" href="heychange_code_script/images/photo.jpg"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
+              <a class="bichrome" href="annonce.php"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
             </div>
             <h2>COURS DE PHOTO</h2>
             <p>Lorem ipsum dolor sit amet,
               consetetur sadipscing elitr, sed
               diam nonumy eirmod tempor</p>
-          </a>
+         
 </div>
         <div class="card-item demande">
           <div class=“photo-hue-rotate”>
-            <a class="bichrome" href="heychange_code_script/images/photo.jpg"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
+            <a class="bichrome" href="annonce.php"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
           </div>
-          <h2>COURS DE PHOTO</h2>
+          <h2>GUITARE POUR PROJET</h2>
           <p>Lorem ipsum dolor sit amet,
             consetetur sadipscing elitr, sed
-            diam nonumy eirmod tempor</p>
+            diam nonumy</p>
         </div>
         <div class="card-item proposition">
           <div class=“photo-hue-rotate”>
-            <a class="bichrome" href="heychange_code_script/images/photo.jpg"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
+            <a class="bichrome" href="annonce.php"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
           </div>
-          <h2>COURS DE PHOTO</h2>
+          <h2>MA VOIX POUR VOS PROJET</h2>
           <p>Lorem ipsum dolor sit amet,
             consetetur sadipscing elitr, sed
-            diam nonumy eirmod tempor</p>
+            diam nonumy,...</p>
         </div>
         <div class="card-item proposition">
           <div class=“photo-hue-rotate”>
-            <a class="bichrome" href="heychange_code_script/images/photo.jpg"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
+            <a class="bichrome" href="annonce.php"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
           </div>
-          <h2>COURS DE PHOTO</h2>
+          <h2>AIDE EN PROGRAMMATION</h2>
           <p>Lorem ipsum dolor sit amet,
             consetetur sadipscing elitr, sed
-            diam nonumy eirmod tempor</p>
+            diam nonumy,...</p>
         </div>
         <div class="card-item proposition">
           <div class=“photo-hue-rotate”>
-            <a class="bichrome" href="heychange_code_script/images/photo.jpg"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
+            <a class="bichrome" href="annonce.php"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
           </div>
-          <h2>COURS DE PHOTO</h2>
+          <h2>LIVRE DE MATH 4e 2020</h2>
           <p>Lorem ipsum dolor sit amet,
             consetetur sadipscing elitr, sed
-            diam nonumy eirmod tempor</p>
+            diam...</p>
         </div>
         <div class="card-item demande">
           <div class=“photo-hue-rotate”>
-            <a class="bichrome" href="heychange_code_script/images/photo.jpg"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
+            <a class="bichrome" href="annonce.php"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
           </div>
-          <h2>COURS DE PHOTO</h2>
+          <h2>LES FLEURS DU MAL (ANNOTÉ)</h2>
           <p>Lorem ipsum dolor sit amet,
             consetetur sadipscing elitr, sed
-            diam nonumy eirmod tempor</p>
+            diam nonumy eirmod,...</p>
         </div>
         <div class="card-item demande">
           <div class=“photo-hue-rotate”>
-            <a class="bichrome" href="heychange_code_script/images/photo.jpg"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
+            <a class="bichrome" href="annonce.php"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
           </div>
-          <h2>COURS DE PHOTO</h2>
+          <h2>SHOOTING PHOTO</h2>
           <p>Lorem ipsum dolor sit amet,
             consetetur sadipscing elitr, sed
-            diam nonumy eirmod tempor</p>
+            diam nonumy eirmod</p>
         </div>
+        
       </div>
-      <div class="stackedcards--animatable stackedcards-overlay top">TOP</div>
+      <div class="fond-recharge">
+          <div class=“reload”>
+            <a class="bichrome" href="home.php"><img src="heychange_code_script/images/reload.svg" alt=""></a>
+          </div>
+          <h2>Recharge la page pour plus de cartes</h2>
+          <p>ou fais une recherche plus précise en scrollant en bas</p>
+        </div>
+      <div class="stackedcards--animatable stackedcards-overlay top">Ne convient pas</div>
       <div class="stackedcards--animatable stackedcards-overlay right">Ajouté aux favoris</div>
       <div class="stackedcards--animatable stackedcards-overlay left">Ne convient pas</div>
     </div>
@@ -119,126 +127,120 @@ VerifyAccessibility([0]);
     </div>
     <!-------------/Match------------------------>
     <!-------------RECHERCHE------------------------->
-    <div Class="Recherche_p">
-      <Form Class="Form-Inline My-2 My-Lg-0">
-        <Div Class="Recherche-Barr">
-          <Input Class="Recherche-Input" Type="Search" Placeholder="" Aria-Label="Search">
-          <A Href="#" Class="Recherche-Icone">
-            <I Class="Fas Fa-Search"></I>
-          </A>
-        </Div>
-      </Form>
-    </div>
+    
+    <div class="search">
+        <input type="text" placeholder="search" />
+        <i class="fa fa-search"></i>
+      </div>
     <!-------------/RECHERCHE------------------------->
     <table>
     <tr>
       <td>
-    <form action="get" class="lieuannonce filtre">
-    <select id="school" name="school" >
-      <option value="tout" >Établissement</option>
-      <optgroup label="Collège">
-      <option value="collegeAndreChavanne">Collège André Chavanne</option>
-      <option value="collegeCalvin">Collège Calvin</option>
-      <option value="collegeClaparede">Collège Claparède</option>
-      <option value="collegeCandolle">Collège de Candolle</option>
-      <option value="collegeDeSaussure">Collège De Saussure</option>
-      <option value="collegeEmilieGourd">Collège Émilie Gourd</option>
-      <option value="CollegeDeStael">Collège De Staël</option>
-      <option value="collegeRousseau">Collège Rousseau</option>
-      <option value="collegeSismondi">Collège Sismondi</option>
-        <option value="collegeVoltaire">Collège Voltaire</option>
-        </optgroup>
-        <optgroup label="ECG">
-      <option value="ECGHenryDunant">ECG Henry Dunant</option>
-        <option value="ECGDeStael">ECG De Staël</option>
-      <option value="ECGJeanPiaget">ECG Jean Piaget</option>
-        <option value="ECGEllaMaillart">ECG Ella Maillart</option>
-        <option value="ECGAimeeStitelmann">ECG Aimée-Stitelmann</option>
-      </optgroup>
-        <optgroup label="CFP Arts">
-        <option value="CFPArtsBij">CFP Arts-Bijouterie</option>
-      <option value="CFPArtsCeram">CFP Arts-Céramique</option>
-      <option value="CFPArtsCVT">CFP Arts-Création de vêtements</option>
-      <option value="CFPArtsDanse">CFP Arts-Danse Contemporaine</option>
-      <option value="CFPArtsDAI">CFP Arts-Dessin d'architecture d'intérieur</option>
-      <option value="CFPArtsPoly">CFP Arts-Polydesign 3D</option>
-      <option value="CFPArtsGR">CFP Arts-Graphisme</option>
-      <option value="CFPArtsID">CFP Arts-Interactive Media Design</option>
-      </optgroup> 
-      <optgroup label="École de Commerce">
-        <option value="EcoleDeCommRaymondUldry">École de Commerce Raymond Uldry</option>
-        <option value="EspaceEntreprise">Éspace Entreprise</option>
-        <option value="EcoleDeCommEmilieGourd">École de Commerce Emilie Gourd</option>
-        <option value="EcoleDeCommAimeeStitelmann">École de Commerce Aimée-Stitelmann</option>
-        <option value="EcoleDeCommAndreChavanne">École de Commerce André-Chavanne</option>
-        <option value="EcoleDeCommNicolasBouvier">École de Commerce Nicolas Bouvier</option>
-        </optgroup>
-      <optgroup label="CFPC">
-      <option value="CFPCBois">CFPC-métiers du bois</option>
-      <option value="CFPCPierre">CFPC-métiers de la pierre</option>
-      <option value="CFPCSF">CFPC-structure et finitions</option>
-      <option value="CFPCMetal">CFPC-métallurgie du bâtiment</option>
-      <option value="CFPCElec">CFPC-électricité du bâtiment</option>
-      <option value="CFPCCP">CFPC-conception et planification</option>
-      </optgroup>
-      <optgroup label="CFPNE/Lullier">
-      <option value="CFPNEH">CFPNE-Horticulture (Floriculture et Paysagisme)</option>
-      <option value="CFPNEH">CFPNE-Horticulture (Pepinière et Paysagisme)</option>
-      <option value="CFPNEF">CFPNE-Fleuriste</option>
-      </optgroup>
-      <optgroup label="CFPSa">
-      <option value="CFPSaDent">Ecole du domaine dentaire</option>
-      <option value="CFPSaAssistantMedical">Ecole d'assistantes et assistants médicaux</option>
-      <option value="CFPSaLabo">Ecole des métiers du laboratoire</option>
-      <option value="CFPSaAssistantCommunautaire">Ecole d'assistant-e-s en soins et santé communautaire</option> 
-      </optgroup>
-      <optgroup label="CFPSo">
-        <option value="CFPSoDiet">Ecole professionnelle de cuisinier-ère-s en diététique</option>
-        <option value="CFPSoAssistant">Ecole d'assistant-e-s socio-éducatif-ve-s</option>
-      </optgroup>
-      <optgroup label="CFPSHR">
-          <option value="CFPSHRBoulangerie">CFPSHR-Boulangerie-Pâtisserie-Confiserie</option>
-        <option value="CFPSHRCuisine">CFPSHR-Cuisinier/ère</option>
-        <option value="CFPSHREmpCuisine">CFPSHR-Employé/e de cuisine</option>
-        <option value="CFPSHRSpeResto">CFPSHR-Spécialiste en restauration</option>
-        <option value="CFPSHREmpResto">CFPSHR-Employé.e en restauration</option>
-        <option value="CFPSHRCoiffure">CFPSHR-Coiffure</option>
-        <option value="CFPSHRLogistique">CFPSHR-Logistique</option>
-      </optgroup>
-      <optgroup label="CFPT">
-        <option value="CFPTInformatique">École d'informatique</option>
-      <option value="CFPTElectronique">École d'électronique</option>
-      <option value="CFPTHorlogerie">École d'horlogerie</option>
-      <option value="CFPTMecaIndu">École de mécatronique industrielle</option>
-      <option value="CFPTAuto">École des métiers de l'automobile</option>
-      </optgroup>
-      </select>
-    </form>
-</td>
-<td>
-    <form action="" class="typeannonce filtre col-5">
-      <select name="typeannonce" id="typeannonce" value="Type d'annonce">
-        <option value="tout" >Type d'annonce</option>
-        <optgroup label="Offre">
-          <option value="Offre">Offre</option>
-          <option value="Offre">Offre matérielle</option>
-          <option value="Offre">Offre de service</option>
-        </optgroup>
-        <optgroup label="Demande">
-          <option value="Demande">Demande</option>
-          <option value="Demande">Demande matérielle</option>
-          <option value="Demande">Demande de service</option>
-        </optgroup>
-      </select>
-    </form>
-    </td>
-</tr>
-</table>
+          <form action="get" class="lieuannonce filtre">
+          <select id="schoolfiltre" name="school" >
+            <option value="tout" >Établissement</option>
+            <optgroup label="Collège">
+            <option value="collegeAndreChavanne">Collège André Chavanne</option>
+            <option value="collegeCalvin">Collège Calvin</option>
+            <option value="collegeClaparede">Collège Claparède</option>
+            <option value="collegeCandolle">Collège de Candolle</option>
+            <option value="collegeDeSaussure">Collège De Saussure</option>
+            <option value="collegeEmilieGourd">Collège Émilie Gourd</option>
+            <option value="CollegeDeStael">Collège De Staël</option>
+            <option value="collegeRousseau">Collège Rousseau</option>
+            <option value="collegeSismondi">Collège Sismondi</option>
+              <option value="collegeVoltaire">Collège Voltaire</option>
+              </optgroup>
+              <optgroup label="ECG">
+            <option value="ECGHenryDunant">ECG Henry Dunant</option>
+              <option value="ECGDeStael">ECG De Staël</option>
+            <option value="ECGJeanPiaget">ECG Jean Piaget</option>
+              <option value="ECGEllaMaillart">ECG Ella Maillart</option>
+              <option value="ECGAimeeStitelmann">ECG Aimée-Stitelmann</option>
+            </optgroup>
+              <optgroup label="CFP Arts">
+              <option value="CFPArtsBij">CFP Arts-Bijouterie</option>
+            <option value="CFPArtsCeram">CFP Arts-Céramique</option>
+            <option value="CFPArtsCVT">CFP Arts-Création de vêtements</option>
+            <option value="CFPArtsDanse">CFP Arts-Danse Contemporaine</option>
+            <option value="CFPArtsDAI">CFP Arts-Dessin d'architecture d'intérieur</option>
+            <option value="CFPArtsPoly">CFP Arts-Polydesign 3D</option>
+            <option value="CFPArtsGR">CFP Arts-Graphisme</option>
+            <option value="CFPArtsID">CFP Arts-Interactive Media Design</option>
+            </optgroup> 
+            <optgroup label="École de Commerce">
+              <option value="EcoleDeCommRaymondUldry">École de Commerce Raymond Uldry</option>
+              <option value="EspaceEntreprise">Éspace Entreprise</option>
+              <option value="EcoleDeCommEmilieGourd">École de Commerce Emilie Gourd</option>
+              <option value="EcoleDeCommAimeeStitelmann">École de Commerce Aimée-Stitelmann</option>
+              <option value="EcoleDeCommAndreChavanne">École de Commerce André-Chavanne</option>
+              <option value="EcoleDeCommNicolasBouvier">École de Commerce Nicolas Bouvier</option>
+              </optgroup>
+            <optgroup label="CFPC">
+            <option value="CFPCBois">CFPC-métiers du bois</option>
+            <option value="CFPCPierre">CFPC-métiers de la pierre</option>
+            <option value="CFPCSF">CFPC-structure et finitions</option>
+            <option value="CFPCMetal">CFPC-métallurgie du bâtiment</option>
+            <option value="CFPCElec">CFPC-électricité du bâtiment</option>
+            <option value="CFPCCP">CFPC-conception et planification</option>
+            </optgroup>
+            <optgroup label="CFPNE/Lullier">
+            <option value="CFPNEH">CFPNE-Horticulture (Floriculture et Paysagisme)</option>
+            <option value="CFPNEH">CFPNE-Horticulture (Pepinière et Paysagisme)</option>
+            <option value="CFPNEF">CFPNE-Fleuriste</option>
+            </optgroup>
+            <optgroup label="CFPSa">
+            <option value="CFPSaDent">Ecole du domaine dentaire</option>
+            <option value="CFPSaAssistantMedical">Ecole d'assistantes et assistants médicaux</option>
+            <option value="CFPSaLabo">Ecole des métiers du laboratoire</option>
+            <option value="CFPSaAssistantCommunautaire">Ecole d'assistant-e-s en soins et santé communautaire</option> 
+            </optgroup>
+            <optgroup label="CFPSo">
+              <option value="CFPSoDiet">Ecole professionnelle de cuisinier-ère-s en diététique</option>
+              <option value="CFPSoAssistant">Ecole d'assistant-e-s socio-éducatif-ve-s</option>
+            </optgroup>
+            <optgroup label="CFPSHR">
+                <option value="CFPSHRBoulangerie">CFPSHR-Boulangerie-Pâtisserie-Confiserie</option>
+              <option value="CFPSHRCuisine">CFPSHR-Cuisinier/ère</option>
+              <option value="CFPSHREmpCuisine">CFPSHR-Employé/e de cuisine</option>
+              <option value="CFPSHRSpeResto">CFPSHR-Spécialiste en restauration</option>
+              <option value="CFPSHREmpResto">CFPSHR-Employé.e en restauration</option>
+              <option value="CFPSHRCoiffure">CFPSHR-Coiffure</option>
+              <option value="CFPSHRLogistique">CFPSHR-Logistique</option>
+            </optgroup>
+            <optgroup label="CFPT">
+              <option value="CFPTInformatique">École d'informatique</option>
+            <option value="CFPTElectronique">École d'électronique</option>
+            <option value="CFPTHorlogerie">École d'horlogerie</option>
+            <option value="CFPTMecaIndu">École de mécatronique industrielle</option>
+            <option value="CFPTAuto">École des métiers de l'automobile</option>
+            </optgroup>
+            </select>
+          </form>
+      </td>
+      <td>
+          <form action="" class="typeannonce filtre col-5">
+            <select name="typeannonce" id="typeannonce" value="Type d'annonce">
+              <option value="tout" >Type d'annonce</option>
+              <optgroup label="Offre">
+                <option value="Offre">Offre</option>
+                <option value="Offre">Offre matérielle</option>
+                <option value="Offre">Offre de service</option>
+              </optgroup>
+              <optgroup label="Demande">
+                <option value="Demande">Demande</option>
+                <option value="Demande">Demande matérielle</option>
+                <option value="Demande">Demande de service</option>
+              </optgroup></select>
+          </form>
+      </td>
+    </tr>
+    </table>
     <!-------------MAP------------------------->
     <div id='map' style='width: 100%; height: 200px;'></div>
     <script>
       mapboxgl.accessToken =
-      'pk.eyJ1IjoiaGFuYWVlZWxwayIsImEiOiJja3cwZXc4NzUwMG4yMnZtb2gzd3JpZHZiIn0.jVGoXwkmwx3hugxteB5IAg';
+      'pk.eyJ1IjoiaGFuYWVlZWxwayIsImEiOiJja21hbHhqb2YxczZhMndxdHN5NzNrN2plIn0.49Qq-uhny0nWD9Q3CnW7ZA';
       var map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/hanaeeelpk/ckw0ef6y88qgh14m3uvrqn0vz', // style URL
@@ -256,7 +258,7 @@ VerifyAccessibility([0]);
     type: 'Collège André-Chavanne',
     geometry: {
       type: 'Point',
-      coordinates: [46.2217029,6.1176508] 
+      coordinates: [6.1176508,46.2217029] 
     },
     properties: {
       title: 'Collège André-Chavanne',
@@ -290,73 +292,36 @@ VerifyAccessibility([0]);
     <!-------------/MAP------------------------->
     <!-------------LISTE------------------------->
     <div class="liste-annonce">
+    
+      <div class="card-item proposition liste-item-card">
+      <a href="annonce.php"> 
+      <div class="card-item-content">
+          <div class=“photo-hue-rotate”>
+            <img src="heychange_code_script/images/photo.jpg" class="bichrome" alt="">
+          </div>
+          <h2>COURS DE PHOTO</h2>
+           <p>Lorem ipsum dolor sit amet,
+          consetetur sadipscing elitr, sed
+          diam nonumy eirmod tempor</p>
+          </div>
+          </a>
+      </div>   
+    
 
-      <button href="annonce.php" class="card-item proposition liste-item-card">
-        <div class=“photo-hue-rotate”>
-          <a class="bichrome" href="heychange_code_script/images/photo.jpg"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
-        </div>
-        <h2>COURS DE PHOTO</h2>
-        <p>Lorem ipsum dolor sit amet,
-          consetetur sadipscing elitr, sed
-          diam nonumy eirmod tempor</p>
-          
-</button>
-
       <div class="card-item demande liste-item-card">
-        <div class=“photo-hue-rotate”>
-          <a class="bichrome" href="heychange_code_script/images/photo.jpg"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
-        </div>
-        <h2>COURS DE PHOTO</h2>
-        <p>Lorem ipsum dolor sit amet,
+      <a href="annonce.php"> 
+      <div class="card-item-content">
+          <div class=“photo-hue-rotate”>
+            <img src="heychange_code_script/images/photo.jpg" class="bichrome textJaune" alt="">
+          </div>
+          <h2 class="textJaune">RECHERCHE COURS DE MATH</h2>
+           <p class="textJaune">Lorem ipsum dolor sit amet,
           consetetur sadipscing elitr, sed
           diam nonumy eirmod tempor</p>
-      </div>
-      <div class="card-item proposition liste-item-card">
-        <div class=“photo-hue-rotate”>
-          <a class="bichrome" href="heychange_code_script/images/photo.jpg"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
-        </div>
-        <h2>COURS DE PHOTO</h2>
-        <p>Lorem ipsum dolor sit amet,
-          consetetur sadipscing elitr, sed
-          diam nonumy eirmod tempor</p>
-      </div>
-      <div class="card-item proposition liste-item-card">
-        <div class=“photo-hue-rotate”>
-          <a class="bichrome" href="heychange_code_script/images/photo.jpg"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
-        </div>
-        <h2>COURS DE PHOTO</h2>
-        <p>Lorem ipsum dolor sit amet,
-          consetetur sadipscing elitr, sed
-          diam nonumy eirmod tempor</p>
-      </div>
-      <div class="card-item proposition liste-item-card">
-        <div class=“photo-hue-rotate”>
-          <a class="bichrome" href="heychange_code_script/images/photo.jpg"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
-        </div>
-        <h2>COURS DE PHOTO</h2>
-        <p>Lorem ipsum dolor sit amet,
-          consetetur sadipscing elitr, sed
-          diam nonumy eirmod tempor</p>
-      </div>
-      <div class="card-item demande liste-item-card">
-        <div class=“photo-hue-rotate”>
-          <a class="bichrome" href="heychange_code_script/images/photo.jpg"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
-        </div>
-        <h2>COURS DE PHOTO</h2>
-        <p>Lorem ipsum dolor sit amet,
-          consetetur sadipscing elitr, sed
-          diam nonumy eirmod tempor</p>
-      </div>
-      <div class="card-item demande liste-item-card">
-        <div class=“photo-hue-rotate”>
-          <a class="bichrome" href="heychange_code_script/images/photo.jpg"><img src="heychange_code_script/images/photo.jpg" alt=""></a>
-        </div>
-        <h2>COURS DE PHOTO</h2>
-        <p>Lorem ipsum dolor sit amet,
-          consetetur sadipscing elitr, sed
-          diam nonumy eirmod tempor</p>
-      </div>
-    </div>
+          </div>
+          </a>
+      </div>   
+     </div>
     <!-------------/LISTE------------------------->
 
 

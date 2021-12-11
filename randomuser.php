@@ -3,7 +3,7 @@
   Projet      : HeyChange
   Date        : 2021
   Auteur      : Hanaé Lepek
-  Description : Compte
+  Description : Compte Random
 */
 include("backend/autoload.php");
 session_start();
@@ -28,13 +28,12 @@ session_start();
 </head>
 <body>
  
-<a class="modifier" href="updateUser.php">MODIFIER</a>
-<a class="deconnexion" href="logout.php">DECONNEXION</a>
+
 <a class="retour" href="home.php">RETOUR</a>
 
 
 <div class="titre">
-<?php echo "<h1>@" . $_SESSION["EnCreation"][0] . "</h1>"; ?>
+<?php echo "<h1>@123456789" . $_SESSION["EnCreation"][0] . "</h1>"; ?>
    
 </div>
 <div class="profilcontent">

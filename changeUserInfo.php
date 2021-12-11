@@ -22,7 +22,7 @@
 </head>
 <body>
 
-	<a href="creeruncompte.php">retour</a>
+	<a href="creeruncompte.php">RETOUR</a>
 <h1>Crée ton compte</h1> 
 
 <h3>* impose une réponse</h3>
